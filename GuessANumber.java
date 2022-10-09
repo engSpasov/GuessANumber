@@ -14,6 +14,9 @@ public class GuessANumber {
         boolean isGuessed=false;
 
         while(!input.equalsIgnoreCase("q")){
+            if(input.equalsIgnoreCase("quit")){
+                break;
+            }
 
             if(isValidInput(input)){
                 int playersGuess=Integer.parseInt(input);
